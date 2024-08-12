@@ -1,0 +1,211 @@
+:root {
+  --color-heart-default: #fff;
+  --color-heart-border: #ff6f61;
+  --color-heart-favorited: #ff6f61;
+}
+
+/* Style for the heart icon in default (white) state */
+.icon-heart {
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: var(--color-heart-default);
+  border: 2px solid var(--color-heart-border); /* Red border */
+  border-radius: 50%;
+  padding: 0.4rem;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer; /* Show a pointer cursor to indicate it's clickable */
+}
+
+/* Style for the heart icon in favorited (red) state */
+.icon-heart.favorited {
+  color: var(--color-heart-favorited); /* Red color when clicked */
+  border: none; /* Remove border when favorited */
+}
+.item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin: 10px; /* Adjusted for consistent spacing between cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  transition: transform 0.3s ease;
+  max-width: 400px; /* Adjusted for margin and padding */
+}
+
+.item-card img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Limit the height */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-card h4 {
+  font-weight: 400;
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--color-dark);
+}
+
+.item-card p {
+  font-weight: 500;
+  color: var(--color-dark);
+  text-transform: capitalize;
+}
+
+.price {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.price span {
+  font-weight: 600;
+}
+
+.price span:last-child {
+  text-decoration: line-through;
+}
+
+.rating {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.card-buttons .btn {
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  padding: 0.5rem;
+}
+
+.card-icons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  transform: translateX(200%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.card-icons a {
+  font-size: 1.1rem;
+  padding: 0.4rem;
+  border: 2px solid var(--color-heart-border);
+  border-radius: 50%;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Heart icon styles */
+.icon-heart {
+  color: var(--color-heart-border);
+  background-color: var(--color-heart-default);
+}
+
+.icon-heart.favorited {
+  color: var(--color-heart-default);
+  background-color: var(--color-heart-favorited);
+  border: none;
+}
+
+.card-icons a:hover {
+  border-color: var(--color-secondary);
+  background: var(--color-secondary);
+}
+
+.item-card:hover .card-icons {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .item-card {
+    padding: 12px;
+    flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
+    max-width: calc(50% - 20px); /* Adjust for smaller screens */
+  }
+
+  .item-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .item-card p {
+    font-size: 0.9rem;
+  }
+
+  .card-buttons .btn {
+    font-size: 0.6rem;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .item-card {
+    margin: 10px; /* Ensure consistent spacing */
+    padding: 10px;
+    flex: 1 1 calc(50% - 20px); /* Adjust for two-column layout */
+    max-width: calc(50% - 20px); /* Adjust for two-column layout */
+  }
+
+  .card-icons {
+    top: 0.5rem;
+    right: 0.5rem;
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .item-card {
+    padding: 8px;
+    flex: 1 1 calc(100% - 20px); /* Adjust for single-column layout */
+    max-width: calc(100% - 20px); /* Adjust for single-column layout */
+  }
+
+  .item-card h4 {
+    font-size: 0.8rem;
+  }
+
+  .item-card p {
+    font-size: 0.8rem;
+  }
+
+  .card-buttons .btn {
+    font-size: 0.5rem;
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-card {
+    padding: 4px;
+  }
+
+  .item-card h4 {
+    font-size: 0.7rem;
+  }
+
+  .item-card p {
+    font-size: 0.7rem;
+  }
+
+  .card-buttons .btn {
+    font-size: 0.4rem;
+    padding: 0.2rem;
+  }
+
+  .card-icons {
+    gap: 0.3rem;
+  }
+
+  .card-icons a {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+}

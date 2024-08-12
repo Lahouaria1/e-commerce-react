@@ -1,0 +1,146 @@
+/* Base Button Styles */
+.btn {
+  background-color: #ff6f61;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  display: inline-block;
+  font-family: Arial, sans-serif; /* Consistent font */
+}
+
+.btn:hover {
+  background-color: #ff9f40;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.btn:focus {
+  outline: 3px solid #ff9f40; /* Outline for focus state */
+}
+
+/* Specific Button Styles */
+.add-to-cart {
+  background-color: #e03ce0;
+}
+
+.add-to-cart:hover {
+  background-color:   #fafbf1;
+}
+
+.apply-discount {
+  background-color: #007bff;
+}
+
+.apply-discount:hover {
+  background-color: #0056b3;
+}
+
+.checkout {
+  background-color: #f447e3;
+}
+
+.checkout:hover {
+  background-color: #fafbf1;
+}
+.product-image{
+  width:300px;
+}
+.number-btn{
+
+  text-align: center;
+  margin-left: 90px;
+}
+
+/* Responsive Styles */
+@media (min-width: 769px) {
+  /* For larger screens */
+  .action-buttons {
+    display: flex;
+    gap: 15px; 
+    justify-content: center; /* Center-align buttons in the row */
+  }
+
+  .btn {
+    width: auto; /* Default width for buttons on larger screens */
+    padding: 0.75rem 1.5rem; /* Adjusted padding for a more balanced look */
+    font-size: 1rem; /* Default font size for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-info {
+    text-align: center;
+  }
+
+  .quantity-selector {
+    justify-content: center;
+  }
+
+  .action-buttons {
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Center-align buttons */
+    gap: 10px; /* Maintain space between buttons */
+  }
+
+  .btn {
+    flex: 1; /* Allow buttons to stretch and fill available space */
+    max-width: 100%; /* Ensure buttons do not overflow */
+    margin: 5px; /* Space between buttons */
+    padding: 0.75rem 1.5rem; /* Increased padding for better touch accessibility */
+    font-size: 1rem; /* Adjust font size for readability */
+    box-shadow: none; /* Remove shadow on smaller screens */
+  }
+}
+
+@media (max-width: 450px) {
+  .product-details {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .product-image {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .product-info h2, .product-price {
+    font-size: 1.2rem;
+  }
+
+  .product-category, .product-description, .product-reviews {
+    font-size: 0.8rem;
+  }
+
+  .quantity-btn {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  #quantity {
+    width: 40px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .btn {
+    width: 100%; /* Full-width buttons on very small screens */
+    max-width: none; /* Remove max-width constraints */
+    padding: 0.75rem 1.5rem; 
+    font-size: 1rem; /* Adjust font size for readability */
+    box-shadow: none; /* Remove shadow on very small screens */
+  }
+}

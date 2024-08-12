@@ -1,0 +1,122 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Container Styles */
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Heading Styles */
+.hero-container > h1 {
+  color: #fff;
+  font-size: 4rem;
+  margin: -100px 0 1rem;
+}
+
+/* Subtext Styles */
+.hero-container > p {
+  margin: 18px 0 2rem;
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Button Container Styles */
+.hero-btns {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual Button Styles */
+.hero-btns .btn {
+  margin: 6px;
+}
+
+/* FontAwesome Icon Margin Adjustment */
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Medium Screens (up to 960px) */
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 2.5rem;
+    margin-top: -150px;
+  }
+
+  .hero-container > p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small Screens (up to 768px) */
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 2.5rem;
+    margin-top: -100px;
+  }
+
+  .hero-container > p {
+    font-size: 1.2rem;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+/* Hero Video Styles */
+.hero-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #cb0c9f;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}

@@ -1,0 +1,68 @@
+/* Container for the About Us page */
+.about-us {
+  background-color: #f4f4f4; /* Light background color for the whole page */
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Intro section styling */
+.about-us-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-us-intro h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.about-us-intro p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Team section styling */
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between team members */
+}
+
+/* Individual team member styling */
+.team-member {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+}
+
+.team-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-name {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.team-role {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .team-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}

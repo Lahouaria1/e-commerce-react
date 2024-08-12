@@ -1,0 +1,157 @@
+.footer-container {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px 0;
+}
+
+.footer-col h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f0a500;
+}
+
+.footer-newsletter {
+  margin: 20px 0;
+}
+
+.footer-newsletter h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.newsletter-icons {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.newsletter-icons i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.newsletter-icons i:hover {
+  transform: rotate(360deg);
+}
+
+.newsletter-icons .facebook:hover {
+  color: #3b5998;
+}
+
+.newsletter-icons .twitter:hover {
+  color: #00acee;
+}
+
+.newsletter-icons .instagram:hover {
+  color: #e1306c;
+}
+
+.newsletter-icons .pinterest:hover {
+  color: #bd081c;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0a500;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #d48b00;
+}
+
+.footer-payment-methods {
+  margin: 20px 0;
+}
+
+.footer-payment-methods h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.payment-icons i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .newsletter-form input[type="email"] {
+    width: 70%;
+  }
+}

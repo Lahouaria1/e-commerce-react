@@ -1,0 +1,270 @@
+/* Root variables for defining global styles like colors, dimensions, and borders */
+:root {
+  --width-lg: 1200px; /* Maximum width for large screens */
+  --color-dark: #333; /* Dark color used for text and other elements */
+  --color-white: #fff; /* White color, commonly used for backgrounds and text */
+  --color-primary: #ff6f61; /* Primary accent color, used for key UI elements */
+  --color-secondary: #ff9f40; /* Secondary accent color, for less prominent UI elements */
+  --border-1: 1px solid #ddd; /* Default border style used across components */
+}
+
+/* Container for the cards, centers the content on the page */
+.cards__container {
+  display: flex;
+  justify-content: center; /* Center the card content horizontally */
+}
+
+/* Wrapper for the card items, controls overall layout and spacing */
+.cards__wrapper {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  gap: 20px; /* Space between each card */
+  max-width: var(--width-lg); /* Constrain the width to the defined large screen width */
+  width: 100%; /* Take up the full available width */
+  padding: 0 20px; /* Horizontal padding inside the wrapper */
+}
+
+/* Styling for the list of card items */
+.cards__items {
+  display: flex;
+  flex-wrap: wrap; /* Wrap the cards onto multiple lines if needed */
+  justify-content: space-between; /* Distribute space between cards evenly */
+  gap: 20px; /* Space between cards */
+  width: 100%; /* Full width of the container */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Styling for category sections, used for grouping cards under a category */
+.category-section {
+  margin-bottom: 40px; /* Space below the category section */
+}
+
+/* Heading within category sections */
+.category-section h2 {
+  text-align: center; /* Center the heading text */
+  margin-bottom: 20px; /* Space below the heading */
+  color: var(--color-primary); /* Apply the primary color to the heading */
+}
+
+/* Individual card styling */
+.item-card {
+  display: flex;
+  flex-direction: column; /* Arrange content inside the card vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 15px; /* Inner padding of the card */
+  margin: 10px; /* Space around the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  border: 2px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  position: relative; /* For positioning inner elements */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  flex: 1 1 calc(33.333% - 40px); /* Take up one third of the available space */
+  max-width: calc(33.333% - 40px); /* Max width to match the flex basis */
+}
+
+/* Image styling within the card */
+.item-card img {
+  width: 100%; /* Full width of the card */
+  height: 300px; /* Fixed height for images */
+  border-radius: 8px; /* Rounded corners on the image */
+  object-fit: cover; /* Crop image to fit the container */
+}
+
+/* Product name styling */
+.item-card h4 {
+  font-weight: 400; /* Normal font weight */
+  margin: 1rem 0 0.5rem; /* Margin around the heading */
+  font-size: 1rem; /* Font size */
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+  color: var(--color-dark); /* Use the dark color for the text */
+}
+
+/* Product category text styling */
+.item-card p {
+  font-weight: 600; 
+  color: var(--color-dark); /* Dark text color */
+  text-transform: capitalize; /* Capitalize first letter of each word */
+}
+
+/* Price section styling */
+.price {
+  display: flex;
+  gap: 0.5rem; /* Space between price elements */
+  margin: 0.5rem 0; /* Margin around the price section */
+}
+
+/* Price text styling */
+.price span {
+  font-weight: 600; /* Bold text for prices */
+}
+
+/* Styling for the old price, if available */
+.price span:last-child {
+  text-decoration: line-through; /* Strike-through for old price */
+}
+
+/* Rating section styling */
+.rating {
+  margin-top: 0.5rem; /* Space above the rating */
+  font-size: 1rem; /* Font size for stars */
+}
+
+/* Link styling within the rating section */
+.rating a {
+  color: var(--color-secondary); /* Use secondary color for rating links */
+}
+
+/* Container for action buttons below the card content */
+.card-buttons {
+  display: flex;
+  gap: 0.5rem; /* Space between buttons */
+  margin-top: 0.5rem; /* Space above the buttons */
+}
+
+/* Button styling within the card */
+.card-buttons .btn {
+  font-size: 0.7rem; /* Font size for buttons */
+  text-transform: capitalize; /* Capitalize first letter of each word */
+  padding: 0.5rem; /* Padding inside the buttons */
+}
+
+/* Container for the icons at the top-right of the card */
+.card-icons {
+  position: absolute;
+  top: 1rem; /* Distance from the top */
+  right: 1rem; /* Distance from the right */
+  display: flex;
+  gap: 0.5rem; /* Space between icons */
+  flex-direction: column; /* Stack icons vertically */
+  transform: translateX(200%); /* Initially hide icons off-screen */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for appearance */
+  opacity: 0; /* Start with icons hidden */
+}
+
+/* Styling for individual icons */
+.card-icons a {
+  font-size: 1.1rem; /* Icon size */
+  color: var(--color-white); /* Icon color */
+  padding: 0.4rem; /* Padding around icons */
+  border: var(--border-1); /* Apply the default border style */
+  border-radius: 5px; /* Rounded corners */
+  border-color: var(--color-primary); /* Border color */
+  background-color: rgb(246, 196, 215); /* Background color */
+  transition: background 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for icons */
+.card-icons a:hover {
+  border-color: var(--color-secondary); /* Change border color on hover */
+  background: var(--color-secondary); /* Change background color on hover */
+}
+
+/* Show icons when the card is hovered */
+.item-card:hover .card-icons {
+  transform: translateX(0); /* Move icons into view */
+  opacity: 1; /* Make icons fully visible */
+}
+
+/* Responsive Styles */
+
+/* Adjustments for screens up to 1200px wide */
+@media (max-width: 1200px) {
+  .item-card {
+    padding: 12px; 
+    flex: 1 1 calc(33.333% - 20px); /* Adjust card size */
+    max-width: calc(33.333% - 20px); /* Adjust max width */
+  }
+
+  .item-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .item-card p {
+    font-size: 0.9rem; 
+  }
+
+  .card-buttons .btn {
+    font-size: 0.6rem;
+    padding: 0.4rem; 
+  }
+}
+
+/* Adjustments for screens up to 992px wide */
+@media (max-width: 992px) {
+  .shop-container {
+    width: 100%; /* Full width container */
+    padding: 0 10px; 
+  }
+
+  .item-card {
+    margin: 10px 0;
+    padding: 10px; 
+    flex: 1 1 calc(50% - 20px); /* Two cards per row */
+    max-width: calc(50% - 20px); /* Adjust max width */
+  }
+
+  .card-icons {
+    top: 0.5rem; /* Adjust position of icons */
+    right: 0.5rem;
+    transform: translateX(100%); /* Adjust initial position */
+  }
+}
+
+/* Adjustments for screens up to 768px wide */
+@media (max-width: 768px) {
+  .shop-container {
+    width: 100%; /* Full width container */
+    padding: 0 10px; 
+  }
+
+  .item-card {
+    padding: 8px;
+    flex: 1 1 100%; /* Single card per row */
+    max-width: 100%; /* Full width card */
+  }
+
+  .item-card h4 {
+    font-size: 0.8rem; 
+  }
+
+  .item-card p {
+    font-size: 0.8rem; 
+  }
+
+  .card-buttons .btn {
+    font-size: 0.5rem; 
+    padding: 0.3rem; 
+  }
+}
+
+/* Adjustments for screens up to 480px wide */
+@media (max-width: 480px) {
+  .item-card {
+    padding: 4px; 
+  }
+
+  .item-card h4 {
+    font-size: 0.7rem; 
+  }
+
+  .item-card p {
+    font-size: 0.7rem; 
+  }
+
+  .card-buttons .btn {
+    font-size: 0.4rem; 
+    padding: 0.2rem; 
+  }
+
+  .card-icons {
+    gap: 0.3rem; 
+  }
+
+  .card-icons a {
+    font-size: 1rem; 
+    padding: 0.3rem; 
+  }
+}
