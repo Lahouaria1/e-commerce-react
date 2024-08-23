@@ -1,11 +1,11 @@
 /* Root variables for defining global styles like colors, dimensions, and borders */
 :root {
   --width-lg: 1200px; /* Maximum width for large screens */
-  --color-dark: #333; /* Dark color used for text and other elements */
-  --color-white: #fff; /* White color, commonly used for backgrounds and text */
-  --color-primary: #ff6f61; /* Primary accent color, used for key UI elements */
-  --color-secondary: #ff9f40; /* Secondary accent color, for less prominent UI elements */
-  --border-1: 1px solid #ddd; /* Default border style used across components */
+  --color-dark: #333;
+  --color-white: #fff;
+  --color-primary: #ff6f61;
+  --color-secondary: #ff9f40; 
+  --border-1: 1px solid #ddd;
 }
 
 /* Container for the cards, centers the content on the page */
@@ -29,7 +29,7 @@
   display: flex;
   flex-wrap: wrap; /* Wrap the cards onto multiple lines if needed */
   justify-content: space-between; /* Distribute space between cards evenly */
-  gap: 20px; /* Space between cards */
+  gap: 20px; 
   width: 100%; /* Full width of the container */
   list-style: none; /* Remove default list styling */
   padding: 0; /* Remove padding */
@@ -67,7 +67,7 @@
 
 /* Image styling within the card */
 .item-card img {
-  width: 100%; /* Full width of the card */
+  width: 100%;
   height: 300px; /* Fixed height for images */
   border-radius: 8px; /* Rounded corners on the image */
   object-fit: cover; /* Crop image to fit the container */
@@ -77,23 +77,23 @@
 .item-card h4 {
   font-weight: 400; /* Normal font weight */
   margin: 1rem 0 0.5rem; /* Margin around the heading */
-  font-size: 1rem; /* Font size */
+  font-size: 1rem; 
   text-transform: capitalize; /* Capitalize the first letter of each word */
-  color: var(--color-dark); /* Use the dark color for the text */
+  color: var(--color-dark); 
 }
 
 /* Product category text styling */
 .item-card p {
   font-weight: 600; 
-  color: var(--color-dark); /* Dark text color */
-  text-transform: capitalize; /* Capitalize first letter of each word */
+  color: var(--color-dark); 
+  text-transform: capitalize; 
 }
 
 /* Price section styling */
 .price {
   display: flex;
-  gap: 0.5rem; /* Space between price elements */
-  margin: 0.5rem 0; /* Margin around the price section */
+  gap: 0.5rem; 
+  margin: 0.5rem 0; 
 }
 
 /* Price text styling */
@@ -126,40 +126,40 @@
 
 /* Button styling within the card */
 .card-buttons .btn {
-  font-size: 0.7rem; /* Font size for buttons */
-  text-transform: capitalize; /* Capitalize first letter of each word */
-  padding: 0.5rem; /* Padding inside the buttons */
+  font-size: 0.7rem;
+  text-transform: capitalize; 
+  padding: 0.5rem; 
 }
 
 /* Container for the icons at the top-right of the card */
 .card-icons {
   position: absolute;
-  top: 1rem; /* Distance from the top */
+  top: 1rem; 
   right: 1rem; /* Distance from the right */
   display: flex;
-  gap: 0.5rem; /* Space between icons */
+  gap: 0.5rem; 
   flex-direction: column; /* Stack icons vertically */
   transform: translateX(200%); /* Initially hide icons off-screen */
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for appearance */
+  transition: transform 0.3s ease, opacity 0.3s ease; 
   opacity: 0; /* Start with icons hidden */
 }
 
 /* Styling for individual icons */
 .card-icons a {
-  font-size: 1.1rem; /* Icon size */
-  color: var(--color-white); /* Icon color */
-  padding: 0.4rem; /* Padding around icons */
+  font-size: 1.1rem; 
+  color: var(--color-white); 
+  padding: 0.4rem; 
   border: var(--border-1); /* Apply the default border style */
-  border-radius: 5px; /* Rounded corners */
-  border-color: var(--color-primary); /* Border color */
-  background-color: rgb(246, 196, 215); /* Background color */
-  transition: background 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effects */
+  border-radius: 5px;
+  border-color: var(--color-primary); 
+  background-color: rgb(246, 196, 215);
+  transition: background 0.3s ease, border-color 0.3s ease; 
 }
 
 /* Hover effect for icons */
 .card-icons a:hover {
-  border-color: var(--color-secondary); /* Change border color on hover */
-  background: var(--color-secondary); /* Change background color on hover */
+  border-color: var(--color-secondary); 
+  background: var(--color-secondary); 
 }
 
 /* Show icons when the card is hovered */
@@ -195,7 +195,7 @@
 /* Adjustments for screens up to 992px wide */
 @media (max-width: 992px) {
   .shop-container {
-    width: 100%; /* Full width container */
+    width: 100%;
     padding: 0 10px; 
   }
 

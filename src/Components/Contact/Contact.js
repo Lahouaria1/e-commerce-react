@@ -99,44 +99,44 @@ const Contact = () => {
             <i className="fas fa-map-marker-alt"></i>{" "}
             {/* Font Awesome icon for address */}
             <div>
-              <p>Office Address</p> {/* Address label */}
-              <p>Foretag un Stockholm, 14 Avenue</p> {/* Address line 1 */}
-              <p>Stockholm, Sweden</p> {/* Address line 2 */}
+              <p>Office Address</p> 
+              <p>Foretag un Stockholm, 14 Avenue</p> 
+              <p>Stockholm, Sweden</p> 
             </div>
           </div>
           <div className="contact-item">
             <i className="fas fa-phone-alt"></i>{" "}
             {/* Font Awesome icon for phone */}
             <div>
-              <p>Phone Number</p> {/* Phone number label */}
-              <p>+4607733309378</p> {/* Phone numbers */}
+              <p>Phone Number</p> 
+              <p>+4607733309378</p>
             </div>
           </div>
           <div className="contact-item">
             <i className="fas fa-envelope"></i>{" "}
             {/* Font Awesome icon for email */}
             <div>
-              <p>Send Email</p> {/* Email label */}
-              <p>admin@webshoping.com</p> {/* Email address */}
+              <p>Send Email</p>
+              <p>admin@webshoping.com</p>
             </div>
           </div>
           <div className="contact-item">
             <i className="fas fa-globe"></i>{" "}
             {/* Font Awesome icon for website */}
             <div>
-              <p>Our Website</p> {/* Website label */}
-              <p>www.webshping.com</p> {/* Website URL */}
+              <p>Our Website</p> 
+              <p>www.webshping.com</p> 
             </div>
           </div>
         </div>
       </div>
       <div className="contact-form">
-        <h2>Send Us a Message</h2> {/* Section header for contact form */}
+        <h2>Send Us a Message</h2> 
         <form onSubmit={handleSubmit}>
           {" "}
           {/* Form element with submit handler */}
           <div className="form-group">
-            <label htmlFor="name">Name</label> {/* Label for name input */}
+            <label htmlFor="name">Name</label> 
             <input
               type="text"
               id="name"
@@ -171,7 +171,7 @@ const Contact = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label> {/* Label for email input */}
+            <label htmlFor="email">Email</label> 
             <input
               type="email"
               id="email"

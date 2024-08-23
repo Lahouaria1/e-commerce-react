@@ -167,7 +167,7 @@
     "imgUrl": "http://localhost:3000/static/media/women15.97928c3a7cbae9be1ecf.jpg",
     "description": "Women's Clothing",
     "newPrice": 150.0,
-    "oldPrice": null,
+    "oldPrice": 280.0,
     "rating": 4
   },
   {
@@ -176,7 +176,7 @@
     "imgUrl": "http://localhost:3000/static/media/women14.f3bc06f8a4f85908e455.jpg",
     "description": "Women's Clothing",
     "newPrice": 200.0,
-    "oldPrice": null,
+    "oldPrice": 300.0,
     "rating": 4.5
   },
   {
@@ -185,7 +185,7 @@
     "imgUrl": "http://localhost:3000/static/media/women13.6cf16b4a1a7fc8dcb27d.jpg",
     "description": "Women's Clothing",
     "newPrice": 220.0,
-    "oldPrice": null,
+    "oldPrice": 400.0,
     "rating": 4.7
   },
   {
@@ -194,7 +194,7 @@
     "imgUrl": "http://localhost:3000/static/media/men1.d8c8f44ef1c1e2f8c4e5.jpg",
     "description": "Men's Clothing",
     "newPrice": 100.0,
-    "oldPrice": null,
+    "oldPrice": 200.0,
     "rating": 4.8
   },
   {
@@ -203,7 +203,7 @@
     "imgUrl": "http://localhost:3000/static/media/men2.cca1b3b47feef19c81a9.jfif",
     "description": "Men's Clothing",
     "newPrice": 120.0,
-    "oldPrice": null,
+    "oldPrice": 200.0,
     "rating": 4.2
   },
   {
@@ -212,7 +212,7 @@
     "imgUrl": "http://localhost:3000/static/media/men3.d9107d2efdc2555511ff.jfif",
     "description": "Men's Clothing",
     "newPrice": 140.0,
-    "oldPrice": null,
+    "oldPrice":230.0,
     "rating": 4.7
   },
   {
@@ -221,7 +221,7 @@
     "imgUrl": "http://localhost:3000/static/media/kid2.73cd96f252bfe9663da2.jpg",
     "description": "Kids Clothing",
     "newPrice": 110.0,
-    "oldPrice": null,
+    "oldPrice": 230.0,
     "rating": 4.3
   },
   {
@@ -230,7 +230,7 @@
     "imgUrl": "http://localhost:3000/static/media/kid3.450c6838bbd5f4a9eeea.jpg",
     "description": "Kids Clothing",
     "newPrice": 130.0,
-    "oldPrice": null,
+    "oldPrice": 300.0,
     "rating": 4.1
   },
   {
@@ -239,6 +239,6 @@
     "imgUrl": "http://localhost:3000/static/media/kid1.327f9efd6fae76d87855.jpg",
     "description": "Kids Clothing",
     "newPrice": 130.0,
-    "oldPrice": null,
+    "oldPrice": 390.0,
     "rating": 4.1
   }]
