@@ -164,7 +164,7 @@
   {
     "id": "19",
     "category": "women",
-    "imgUrl": "http://localhost:3000/static/media/women15.97928c3a7cbae9be1ecf.jpg",
+    "imgUrl": "e-commerce-react/src/assets/Images/women15.jpg",
     "description": "Women's Clothing",
     "newPrice": 150.0,
     "oldPrice": 280.0,
@@ -173,7 +173,7 @@
   {
     "id": "20",
     "category": "women",
-    "imgUrl": "http://localhost:3000/static/media/women14.f3bc06f8a4f85908e455.jpg",
+    "imgUrl": "e-commerce-react/src/assets/Images/women15.jpg",
     "description": "Women's Clothing",
     "newPrice": 200.0,
     "oldPrice": 300.0,
@@ -182,7 +182,7 @@
   {
     "id": "21",
     "category": "women",
-    "imgUrl": "http://localhost:3000/static/media/women13.6cf16b4a1a7fc8dcb27d.jpg",
+    "imgUrl": "e-commerce-react/src/assets/Images/women13.jpg",
     "description": "Women's Clothing",
     "newPrice": 220.0,
     "oldPrice": 400.0,
@@ -191,7 +191,7 @@
   {
     "id": "22",
     "category": "men",
-    "imgUrl": "http://localhost:3000/static/media/men1.d8c8f44ef1c1e2f8c4e5.jpg",
+    "imgUrl": "e-commerce-react/src/assets/Images/menn.jfif",
     "description": "Men's Clothing",
     "newPrice": 100.0,
     "oldPrice": 200.0,
@@ -200,7 +200,7 @@
   {
     "id": "23",
     "category": "men",
-    "imgUrl": "http://localhost:3000/static/media/men2.cca1b3b47feef19c81a9.jfif",
+    "imgUrl": "e-commerce-react/src/assets/Images/menn.jfif",
     "description": "Men's Clothing",
     "newPrice": 120.0,
     "oldPrice": 200.0,
@@ -209,7 +209,7 @@
   {
     "id": "24",
     "category": "men",
-    "imgUrl": "http://localhost:3000/static/media/men3.d9107d2efdc2555511ff.jfif",
+    "imgUrl": "e-commerce-react/src/assets/Images/men3.jfif",
     "description": "Men's Clothing",
     "newPrice": 140.0,
     "oldPrice":230.0,
@@ -218,7 +218,7 @@
   {
     "id": "25",
     "category": "kids",
-    "imgUrl": "http://localhost:3000/static/media/kid2.73cd96f252bfe9663da2.jpg",
+    "imgUrl": "e-commerce-react/src/assets/Images/kid2.jpg",
     "description": "Kids Clothing",
     "newPrice": 110.0,
     "oldPrice": 230.0,
@@ -227,7 +227,7 @@
   {
     "id": "26",
     "category": "kids",
-    "imgUrl": "http://localhost:3000/static/media/kid3.450c6838bbd5f4a9eeea.jpg",
+    "imgUrl": "e-commerce-react/src/assets/Images/kid3.jpg",
     "description": "Kids Clothing",
     "newPrice": 130.0,
     "oldPrice": 300.0,
@@ -236,7 +236,7 @@
   {
     "id": "27",
     "category": "kids",
-    "imgUrl": "http://localhost:3000/static/media/kid1.327f9efd6fae76d87855.jpg",
+    "imgUrl": "e-commerce-react/src/assets/Images/kid1.jpg",
     "description": "Kids Clothing",
     "newPrice": 130.0,
     "oldPrice": 390.0,
