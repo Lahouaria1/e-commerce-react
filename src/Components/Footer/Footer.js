@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>&copy; 2024 Your Company. All rights reserved.</p> {/* Copyright notice */}
+        <p>&copy;  Designed by Lahouaria Sahla 2024. All rights reserved.</p> {/* Copyright notice */}
       </div>
     </footer>
   );
